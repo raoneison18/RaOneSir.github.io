@@ -14,7 +14,68 @@
         body { font-family: 'Inter', sans-serif; html { scroll-behavior: smooth; } }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950">
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden">
+
+    <!-- Premium Fixed Top Navigation Bar -->
+    <nav class="sticky top-0 z-40 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- Brand Identity -->
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-black text-sm">R1</div>
+                <span class="font-bold text-sm tracking-tight text-white hidden sm:inline-block">Study With RaOne</span>
+            </a>
+
+            <!-- Desktop Menu (Hidden on Mobile) -->
+            <div class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
+                <a href="#consultancy-services" class="hover:text-cyan-400 transition">Consultancy Sectors</a>
+                <a href="#secure-mentorship-hub" class="hover:text-cyan-400 transition">Secure Matrix Contact</a>
+                <a href="#free-vault" class="hover:text-cyan-400 transition">Free Study Vault</a>
+                <a href="#study-contact-form" class="hover:text-cyan-400 transition">Get In Touch</a>
+            </div>
+
+            <!-- Right-Side Three-Dots Action Menu Button -->
+            <button onclick="toggleMobileMenu()" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/30 transition cursor-pointer" aria-label="Open Navigation Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="w-5 h-5">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Slide-out Mobile Action Drawer Overlap Overlay -->
+    <div id="mobile-menu-drawer" class="fixed inset-y-0 right-0 z-50 w-72 max-w-sm bg-slate-900/95 backdrop-blur-lg border-l border-slate-850 p-6 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col justify-between">
+        <div>
+            <!-- Close Header inside Drawer -->
+            <div class="flex justify-between items-center border-b border-slate-800 pb-4 mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">Quick Navigation</span>
+                <button onclick="toggleMobileMenu()" class="p-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 hover:text-white transition cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" class="w-4.5 h-4.5">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Action Navigation Links -->
+            <div class="flex flex-col gap-1 text-sm font-medium">
+                <a href="#consultancy-services" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">🩺 Entry Sectors</a>
+                <a href="#secure-mentorship-hub" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">🔒 Mentorship Channels</a>
+                <a href="#free-vault" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">📂 Free Study Vault</a>
+                <a href="#study-contact-form" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">🎯 Reach Counselors</a>
+            </div>
+        </div>
+
+        <!-- Sticky Quick Links in Footer Drawer -->
+        <div class="border-t border-slate-800 pt-4 space-y-3">
+            <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="w-full inline-flex items-center justify-center py-2.5 rounded-xl text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition text-center">
+                Launch Telegram Channel
+            </a>
+            <p class="text-[9px] text-center text-slate-500 italic">Official Secure Platform Ecosystem</p>
+        </div>
+    </div>
+
+    <!-- Black Backdrop Layer when Menu opens -->
+    <div id="drawer-backdrop" onclick="toggleMobileMenu()" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
+
 
     <!-- Header Section -->
     <header class="relative overflow-hidden py-20 px-4 border-b border-slate-900 bg-radial from-slate-900 via-slate-950 to-slate-950">
@@ -81,7 +142,7 @@
         </section>
 
         <!-- Career Guidance Consultancy Services Section -->
-        <section id="consultancy-services" class="mb-20 scroll-mt-6">
+        <section id="consultancy-services" class="mb-20 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Elite Counselling Ecosystem</span>
                 <h2 class="text-2xl md:text-3xl font-extrabold mt-3 mb-3">CAREER GUIDANCE CONSULTANCY SERVICES</h2>
@@ -212,7 +273,7 @@
         </section>
 
         <!-- HIGHLY UPGRADED MULTI-CHANNEL CONTACT MATRIX HUB -->
-        <section id="secure-mentorship-hub" class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden scroll-mt-6">
+        <section id="secure-mentorship-hub" class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden scroll-mt-24">
             <div class="text-center max-w-xl mx-auto mb-8">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Secure Direct Access</span>
                 <h2 class="text-xl md:text-2xl font-bold mt-1">1-on-1 Personalized Mentorship</h2>
@@ -278,7 +339,7 @@
         </section>
 
         <!-- ACTIVE INTERACTIVE GOOGLE DRIVE ROUTING HUB WITH MICRO LABELS RESTORED -->
-        <section class="max-w-5xl mx-auto bg-slate-900/40 border border-slate-850 rounded-2xl p-6 shadow-xl mb-20">
+        <section id="free-vault" class="max-w-5xl mx-auto bg-slate-900/40 border border-slate-850 rounded-2xl p-6 shadow-xl mb-20 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-8">
                 <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold mx-auto mb-2 text-lg">📂</div>
                 <h2 class="text-xl md:text-2xl font-bold mb-1">Free Study Material Vault</h2>
@@ -380,7 +441,7 @@
         </section>
 
         <!-- Formspree Secure Contact Form Section -->
-        <section id="study-contact-form" class="max-w-2xl mx-auto bg-slate-900 border border-slate-850 rounded-2xl p-6 shadow-xl">
+        <section id="study-contact-form" class="max-w-2xl mx-auto bg-slate-900 border border-slate-850 rounded-2xl p-6 shadow-xl scroll-mt-24">
             <div class="text-center mb-6">
                 <h2 class="text-xl font-bold mb-1">Get in Touch Directly</h2>
                 <p class="text-xs text-slate-400">Fill out this secure form and we will reach out to you.</p>
@@ -442,6 +503,22 @@
 
     <!-- Comprehensive Re-engineered Clipboard Script Operations -->
     <script>
+      // Toggle Drawer Function
+      function toggleMobileMenu() {
+        const drawer = document.getElementById('mobile-menu-drawer');
+        const backdrop = document.getElementById('drawer-backdrop');
+        
+        if (drawer.classList.contains('translate-x-full')) {
+          drawer.classList.remove('translate-x-full');
+          backdrop.classList.remove('hidden');
+          setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+        } else {
+          drawer.classList.add('translate-x-full');
+          backdrop.classList.remove('opacity-100');
+          setTimeout(() => backdrop.classList.add('hidden'), 300);
+        }
+      }
+
       function copyHandle(textToCopy, btnId) {
         const tempTextArea = document.createElement("textarea");
         tempTextArea.value = textToCopy;
