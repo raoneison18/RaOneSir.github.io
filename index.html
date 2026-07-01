@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; html { scroll-behavior: smooth; } }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950">
@@ -100,20 +100,23 @@
                 </div>
 
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4 text-center sm:text-left">🩺 Expert Medical Admission Entry Sectors covered:</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2 text-center sm:text-left">🩺 Expert Medical Admission Entry Sectors covered:</h3>
+                    <p class="text-[11px] text-slate-500 mb-4 text-center sm:text-left">Tap on your target sector to securely request preferred college cutoff roadmaps.</p>
+                    
+                    <!-- Dynamic Funnel Anchoring Linked to Mentorship Hub -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">MBBS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BDS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BAMS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BHMS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BUMS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BVSC Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BPTH Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BNYS Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BASLP Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BOTH Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BP & O Colleges</span></div>
-                        <div class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">B.Sc. Nursing</span></div>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">MBBS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BDS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BAMS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BHMS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BUMS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BVSC Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BPTH Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BNYS Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BASLP Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BOTH Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BP & O Colleges</span></a>
+                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">B.Sc. Nursing</span></a>
                     </div>
                 </div>
             </div>
@@ -209,7 +212,7 @@
         </section>
 
         <!-- HIGHLY UPGRADED MULTI-CHANNEL CONTACT MATRIX HUB -->
-        <section class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden">
+        <section id="secure-mentorship-hub" class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden scroll-mt-6">
             <div class="text-center max-w-xl mx-auto mb-8">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Secure Direct Access</span>
                 <h2 class="text-xl md:text-2xl font-bold mt-1">1-on-1 Personalized Mentorship</h2>
@@ -366,7 +369,7 @@
                     <p class="text-sm text-slate-400 leading-relaxed">Once verified via Session Messenger or the contact terminal form, private secure drive folder invites are routed directly to your personal portal profile instantly.</p>
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl">
-                    <h4 class="font-semibold text-slate-200 mb-2">Why do you recommend using decentralized messenger networks?</h4>
+                    <h4 class="font-semibold text-slate-200 mb-2">Why do you recommend decentralized messenger networks?</h4>
                     <p class="text-sm text-slate-400 leading-relaxed">Platforms like Session, Wire, and Element allow identity mapping using usernames or alphanumeric hashes without requesting cell numbers. This fully eliminates corporate data brokers or leaks.</p>
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl">
