@@ -17,10 +17,8 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden">
 
-    <!-- Premium Fixed Top Navigation Bar -->
     <nav class="sticky top-0 z-40 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900 px-4 py-3">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <!-- Brand Identity showcasing the logo.png Medallion Design -->
             <a href="#" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 rounded-full border border-cyan-500/30 overflow-hidden bg-slate-900 shadow-lg shadow-cyan-500/5 transition group-hover:border-cyan-400">
                     <img src="logo.png" alt="Arjun Official Emblem Logo" class="w-full h-full object-cover">
@@ -31,7 +29,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Menu Links -->
             <div class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
                 <a href="#consultancy-services" class="hover:text-cyan-400 transition">Consultancy Sectors</a>
                 <a href="#admission-process" class="hover:text-cyan-400 transition">Our Process</a>
@@ -41,7 +38,6 @@
                 <a href="#study-contact-form" class="hover:text-cyan-400 transition">Get In Touch</a>
             </div>
 
-            <!-- Right-Side Interactive Three-Dots Action Menu Button -->
             <button onclick="toggleMobileMenu()" class="p-2 rounded-xl bg-slate-900 border border-slate-850 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/30 transition cursor-pointer" aria-label="Open Action Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="w-5 h-5">
                     <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
@@ -50,7 +46,6 @@
         </div>
     </nav>
 
-    <!-- Slide-out Mobile Action Drawer Overlay -->
     <div id="mobile-menu-drawer" class="fixed inset-y-0 right-0 z-50 w-72 max-w-sm bg-slate-900/95 backdrop-blur-lg border-l border-slate-850 p-6 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col justify-between">
         <div>
             <div class="flex justify-between items-center border-b border-slate-800 pb-4 mb-6">
@@ -80,7 +75,8 @@
         </div>
     </div>
 
-    <!-- Header Hero Presentation Layer -->
+    <div id="drawer-backdrop" onclick="toggleMobileMenu()" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
+
     <header class="relative overflow-hidden py-24 px-4 border-b border-slate-900 bg-radial from-slate-900 via-slate-950 to-slate-950">
         <div class="max-w-4xl mx-auto text-center relative z-10 flex flex-col items-center">
             
@@ -99,22 +95,21 @@
                 Your Trusted Education Partner for MBBS, CAT, NET & Professional Courses and Exams.
             </p>
             
-            <!-- Trust Indicators -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 my-2 text-sm border-y border-slate-900 py-4 w-full max-w-2xl text-slate-300">
-                <div class="flex items-center gap-2"><span class="text-base">🎓</span> <strong>5K+ Students</strong> Successfully Enrolled</div>
-                <div class="hidden sm:block text-slate-800">|</div>
-                <div class="flex items-center gap-2"><span class="text-base">⏱️</span> <strong>Legacy Since 2018</strong> Parents Joined</div>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 my-2 text-sm max-w-2xl mx-auto border-y border-slate-900 py-4 w-full">
+                <div class="text-slate-300"><span class="text-cyan-400 font-bold">🎓 5K+ Students</span> Successfully Enrolled</div>
+                <div class="hidden sm:block text-slate-700">|</div>
+                <div class="text-slate-300"><span class="text-cyan-400 font-bold">⏱️ Legacy Since 2018</span> | Parents Joined</div>
             </div>
 
             <p class="text-xs md:text-sm text-slate-500 my-4 max-w-xl">
-                Crack your dream career with top-tier strategic mentoring. Get premium consultation sessions starting at <span class="text-cyan-400 font-semibold">just ₹99 Rupees</span>, along with high-yield notes and question patterns.
+                Crack your dream career with top-tier strategic mentoring. Get premium consultation sessions starting at <span class="text-cyan-400 font-bold underline">just ₹99 Rupees</span>, along with high-yield notes and question patterns.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md mt-4">
-                <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="w-full py-3 rounded-xl font-bold text-xs bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition shadow-lg text-center">
+                <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20 cursor-pointer text-sm">
                     Join Main Telegram Channel
                 </a>
-                <a href="#consultancy-services" class="w-full py-3 rounded-xl font-bold text-xs bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition text-center">
+                <a href="#consultancy-services" class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition text-sm">
                     Career Consultancy Details
                 </a>
             </div>
@@ -123,27 +118,22 @@
 
     <main class="max-w-6xl mx-auto px-4 py-12">
         
-        <!-- 📊 HIGH-CONTRAST STATISTICS GRID (CORRECTED TO 93.75%) -->
         <section class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-24">
-            <!-- Stat 1 -->
             <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
                 <div class="text-2xl mb-2">🧑‍🤝‍🧑</div>
                 <span class="text-2xl md:text-3xl font-black text-white tracking-tight">5K+</span>
                 <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Students Enrolled</span>
             </div>
-            <!-- Stat 2 -->
             <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
                 <div class="text-2xl mb-2">📖</div>
                 <span class="text-2xl md:text-3xl font-black text-cyan-400 tracking-tight">15+</span>
                 <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Total Courses</span>
             </div>
-            <!-- Stat 3 -->
             <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
                 <div class="text-2xl mb-2">🏆</div>
                 <span class="text-2xl md:text-3xl font-black text-white tracking-tight">8+ Years</span>
                 <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Of Excellence</span>
             </div>
-            <!-- Stat 4 -->
             <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
                 <div class="text-2xl mb-2">🌐</div>
                 <span class="text-2xl md:text-3xl font-black text-emerald-400 tracking-tight">93.75%</span>
@@ -151,7 +141,6 @@
             </div>
         </section>
 
-        <!-- Core Value Feature Section -->
         <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
             <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl">
                 <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold mb-4">📚</div>
@@ -170,7 +159,6 @@
             </div>
         </section>
 
-        <!-- Career Guidance Consultancy Services Section -->
         <section id="consultancy-services" class="mb-16 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Elite Counselling Ecosystem</span>
@@ -180,19 +168,18 @@
                 </p>
             </div>
 
-            <!-- BOTH PROFESSIONAL IMAGES STACKED -->
             <div class="bg-slate-900/30 border border-slate-900 p-6 rounded-2xl max-w-4xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-slate-800/80">
                     <div class="flex flex-col items-center">
                         <div class="border border-slate-800 p-2 rounded-2xl bg-slate-950 shadow-xl w-full overflow-hidden">
-                            <img src="consultation.png" alt="Career Guidance Professional Interview" class="rounded-xl w-full object-cover h-64 md:h-72">
+                            <img src="consultation.png" alt="Career Guidance Professional Interview" class="rounded-xl w-full object-contain max-h-80">
                         </div>
                         <p class="text-[10px] text-slate-500 mt-2.5 italic">Figure 1.1: Personal Strategic Counselling Profile</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
                         <div class="border border-slate-800 p-2 rounded-2xl bg-slate-950 shadow-xl w-full overflow-hidden">
-                            <img src="matrix.jpg" alt="Official Admission Matrices Map Grid" class="rounded-xl w-full object-cover h-64 md:h-72">
+                            <img src="matrix.jpg" alt="Official Admission Matrices Map Grid" class="rounded-xl w-full object-contain max-h-80">
                         </div>
                         <p class="text-[10px] text-slate-500 mt-2.5 italic">Figure 1.2: Official Institutional Allotment Matrix Blueprint</p>
                     </div>
@@ -214,7 +201,6 @@
             </div>
         </section>
 
-        <!-- Our Admission Process Section -->
         <section id="admission-process" class="mb-24 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Operational Blueprint</span>
@@ -262,7 +248,6 @@
             </div>
         </section>
 
-        <!-- Legacy Success Dashboard Table -->
         <section class="max-w-4xl mx-auto mb-20">
             <div class="text-center mb-8">
                 <h2 class="text-xl font-bold mb-1">Our Legacy Dashboard</h2>
@@ -280,13 +265,12 @@
                     <tbody class="divide-y divide-slate-800/40 text-slate-300 font-mono">
                         <tr class="hover:bg-slate-900/20"><td class="p-4">2018–2020</td><td class="p-4">1,100+ Positions</td><td class="p-4 text-emerald-400">92.4% Success</td></tr>
                         <tr class="hover:bg-slate-900/20"><td class="p-4">2021–2023</td><td class="p-4">2,350+ Positions</td><td class="p-4 text-emerald-400">95.1% Success</td></tr>
-                        <tr class="hover:bg-slate-900/20"><td class="p-4">2024–2026</td><td class="p-4">1,600+ Positions</td><td class="p-4 text-cyan-400">93.75% Success Index</td></tr>
+                        <tr class="hover:bg-slate-900/20"><td class="p-4">2024–2026</td><td class="p-4">1,600+ Positions</td><td class="p-4 text-cyan-400">Active Cycle</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Premium Adjusted Pricing Tier Grid -->
         <section class="mb-20">
             <div class="text-center max-w-xl mx-auto mb-10">
                 <h2 class="text-2xl font-bold mb-2">Simple, Premium Pricing Plans</h2>
@@ -348,7 +332,6 @@
             </div>
         </section>
 
-        <!-- SECURE DIRECT ACCESS HUB -->
         <section id="secure-mentorship-hub" class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden scroll-mt-24">
             <div class="text-center max-w-xl mx-auto mb-8">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Secure Direct Access</span>
@@ -415,7 +398,6 @@
                 </div>
             </div>
 
-            <!-- OFFICIAL BROADCAST COMMUNITY GATEWAY -->
             <div class="border-t border-slate-900/80 pt-6">
                 <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 text-center">📢 Official Community Broadcast Channels</h4>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto text-xs">
@@ -439,7 +421,6 @@
             </div>
         </section>
 
-        <!-- 📂 FREE INTERACTIVE STUDY MATERIAL VAULT -->
         <section id="free-vault" class="max-w-5xl mx-auto bg-slate-900/40 border border-slate-850 rounded-2xl p-6 shadow-xl mb-20 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-8">
                 <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold mx-auto mb-2 text-lg">📂</div>
@@ -472,6 +453,38 @@
                     <span class="text-2xl shrink-0">🎖️</span>
                     <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">NDA</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Defence</p></div>
                 </a>
+                <a href="https://drive.google.com/drive/folders/1s3ZvJvA-04vyPue1Y1SwGgvjPgp8pWZh" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">⚡</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CUET</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Central Uni</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1lT3SESQ5kA6_Ed2hmlamxB96ZK_XxK96" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">⚙️</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">GATE</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Technical</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1daciTu3cmBAC47Yu7pBo2o19_c9hNyG4" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">📈</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Management</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1w2yo5gHuFyZ4vIDDlTzx26BAASL-IIkz" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">⚖️</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CLAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Law Entry</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1e6_MipT96_020JazLkFSABpSJkiHATyP" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">💼</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">SSC</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">General Govt</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1C_Qwd-84W8Dmu_GuigbAJ-DjQh8zOjMg" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">🚂</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">Railways</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Railways Portal</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1VeU78-r1qaUqCUN2RPVIyPxocm0bRFaZ" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">🪐</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">SAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Global Tier</p></div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1Pa8No4wnmCtz25hKyz_exInF4zCX8CZw" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
+                    <span class="text-2xl shrink-0">🧬</span>
+                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">MHT-CET</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">State Entry</p></div>
+                </a>
             </div>
 
             <div class="mb-6 p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/10 text-center text-xs text-slate-400 leading-relaxed">
@@ -485,7 +498,6 @@
             </div>
         </section>
 
-        <!-- Professional FAQ Section -->
         <section class="max-w-3xl mx-auto mb-20">
             <div class="text-center mb-10">
                 <h2 class="text-2xl md:text-3xl font-bold mb-2">Frequently Asked Questions</h2>
@@ -502,12 +514,11 @@
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl">
                     <h4 class="font-semibold text-slate-200 mb-2">Are the 1-week final edge papers different from generic mock papers?</h4>
-                    <p class="text-sm text-slate-400 leading-relaxed">Yes. Our structural mapping filters recurring pattern trends, matching high-probability core question distributions safely and reliably.</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">Yes. Our prediction sheets filter recurring master patterns, matching question trends with an accuracy rate between 75% to 95% core similarities.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Formspree Secure Contact Form Section -->
         <section id="study-contact-form" class="max-w-2xl mx-auto bg-slate-900 border border-slate-850 rounded-2xl p-6 shadow-xl mb-24 scroll-mt-24">
             <div class="text-center mb-6">
                 <h2 class="text-xl font-bold mb-1">Get in Touch Directly</h2>
@@ -562,7 +573,6 @@
             </form>
         </section>
 
-        <!-- 🏆 MASSIVE ELITE SUCCESS STORIES AND TESTIMONIALS DISCOVERY HUB -->
         <section id="student-testimonials" class="mb-20 mt-12 scroll-mt-24 border-t border-slate-900 pt-16">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">The Hall of Fame</span>
@@ -571,7 +581,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <!-- Testimonial 1 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -591,7 +600,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -611,7 +619,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -631,7 +638,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 4 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -651,7 +657,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 5 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -671,7 +676,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 6 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -691,7 +695,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 7 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -711,7 +714,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 8 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -731,7 +733,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 9 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
@@ -751,7 +752,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 10 Premium Alumnus (Prabhat Chaurasiya Success Track) -->
                 <div class="bg-slate-900 border border-cyan-500/40 p-6 rounded-2xl flex flex-col justify-between relative shadow-md shadow-cyan-950/10">
                     <span class="absolute top-0 right-4 -translate-y-1/2 bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Premium Alumnus</span>
                     <div>
@@ -781,7 +781,6 @@
         <p class="max-w-md mx-auto px-4">Disclaimer: Concept mock sets are intended purely as strategic evaluation tools to assist student prep.</p>
     </footer>
 
-    <!-- Script Operations for Drawer Navigation Menu & Clipboard Actions -->
     <script>
       function toggleMobileMenu() {
         const drawer = document.getElementById('mobile-menu-drawer');
