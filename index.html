@@ -8,10 +8,11 @@
     <meta name="description" content="Get premium study materials, high-probability predicted question sets, and expert career guidance consultancy since 2018. Over 5K+ successful enrollments.">
     <meta name="keywords" content="arjun, studyarjun, studywitharjun, career guidance, neet counselling, mbbs admission, exam prep">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; html { scroll-behavior: smooth; } }
+        body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden">
@@ -30,7 +31,7 @@
                 </div>
             </a>
 
-            <!-- Desktop Menu Links (Hidden on Mobile viewports) -->
+            <!-- Desktop Menu Links -->
             <div class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
                 <a href="#consultancy-services" class="hover:text-cyan-400 transition">Consultancy Sectors</a>
                 <a href="#admission-process" class="hover:text-cyan-400 transition">Our Process</a>
@@ -52,7 +53,6 @@
     <!-- Slide-out Mobile Action Drawer Overlay -->
     <div id="mobile-menu-drawer" class="fixed inset-y-0 right-0 z-50 w-72 max-w-sm bg-slate-900/95 backdrop-blur-lg border-l border-slate-850 p-6 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col justify-between">
         <div>
-            <!-- Drawer Header section -->
             <div class="flex justify-between items-center border-b border-slate-800 pb-4 mb-6">
                 <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">Quick Navigation</span>
                 <button onclick="toggleMobileMenu()" class="p-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 hover:text-white transition cursor-pointer">
@@ -62,7 +62,6 @@
                 </button>
             </div>
 
-            <!-- Navigation Links Inside Drawer -->
             <div class="flex flex-col gap-1 text-sm font-medium">
                 <a href="#consultancy-services" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">🩺 Entry Sectors</a>
                 <a href="#admission-process" onclick="toggleMobileMenu()" class="px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-950 hover:text-cyan-400 transition flex items-center gap-2">📋 Our Process</a>
@@ -73,7 +72,6 @@
             </div>
         </div>
 
-        <!-- Drawer Footer Quick Links -->
         <div class="border-t border-slate-800 pt-4 space-y-3">
             <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="w-full inline-flex items-center justify-center py-2.5 rounded-xl text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition text-center">
                 Launch Telegram Channel
@@ -82,14 +80,10 @@
         </div>
     </div>
 
-    <!-- Black Backdrop Layer -->
-    <div id="drawer-backdrop" onclick="toggleMobileMenu()" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
-
     <!-- Header Hero Presentation Layer -->
     <header class="relative overflow-hidden py-24 px-4 border-b border-slate-900 bg-radial from-slate-900 via-slate-950 to-slate-950">
         <div class="max-w-4xl mx-auto text-center relative z-10 flex flex-col items-center">
             
-            <!-- Showcase of your Premium Medallion Logo -->
             <div class="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-cyan-500/20 bg-slate-900 p-1 shadow-2xl shadow-cyan-950/50 mb-6">
                 <img src="logo.png" alt="Arjun Premium Medallion Logo" class="w-full h-full object-cover rounded-full">
             </div>
@@ -97,25 +91,30 @@
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 mb-6 border border-cyan-500/20">
                 🚀 Official Portal: Study With Arjun
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mb-6">
-                Premium Exam Preparation, <br><span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Made Affordable.</span>
+
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 max-w-3xl leading-tight">
+                Shape Your Future with Career Consultancy
             </h1>
+            <p class="text-xs md:text-base text-slate-400 font-medium mb-8 max-w-2xl leading-relaxed">
+                Your Trusted Education Partner for MBBS, CAT, NET & Professional Courses and Exams.
+            </p>
             
-            <!-- Professional Trust Badges -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 my-2 text-sm max-w-2xl mx-auto border-y border-slate-900 py-4 w-full">
-                <div class="text-slate-300"><span class="text-cyan-400 font-bold">🎓 5K+ Students</span> Successfully Enrolled</div>
-                <div class="hidden sm:block text-slate-700">|</div>
-                <div class="text-slate-300"><span class="text-cyan-400 font-bold">⏱️ Legacy Since 2018</span> | Parents Joined</div>
+            <!-- Trust Indicators -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 my-2 text-sm border-y border-slate-900 py-4 w-full max-w-2xl text-slate-300">
+                <div class="flex items-center gap-2"><span class="text-base">🎓</span> <strong>5K+ Students</strong> Successfully Enrolled</div>
+                <div class="hidden sm:block text-slate-800">|</div>
+                <div class="flex items-center gap-2"><span class="text-base">⏱️</span> <strong>Legacy Since 2018</strong> Parents Joined</div>
             </div>
 
-            <p class="text-sm md:text-base text-slate-400 max-w-2xl mx-auto my-6 leading-relaxed">
-                Crack your dream career with top-tier strategic mentoring. Get premium consultation sessions starting at <span class="text-cyan-400 font-bold underline">just ₹99 Rupees</span>, along with high-yield notes and question patterns.
+            <p class="text-xs md:text-sm text-slate-500 my-4 max-w-xl">
+                Crack your dream career with top-tier strategic mentoring. Get premium consultation sessions starting at <span class="text-cyan-400 font-semibold">just ₹99 Rupees</span>, along with high-yield notes and question patterns.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto w-full">
-                <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20 cursor-pointer text-sm">
+
+            <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md mt-4">
+                <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="w-full py-3 rounded-xl font-bold text-xs bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition shadow-lg text-center">
                     Join Main Telegram Channel
                 </a>
-                <a href="#consultancy-services" class="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition text-sm">
+                <a href="#consultancy-services" class="w-full py-3 rounded-xl font-bold text-xs bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition text-center">
                     Career Consultancy Details
                 </a>
             </div>
@@ -124,7 +123,35 @@
 
     <main class="max-w-6xl mx-auto px-4 py-12">
         
-        <!-- Core Value Grid -->
+        <!-- 📊 HIGH-CONTRAST STATISTICS GRID (REPLICATED FROM DASHBOARD BLOCK) -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-24">
+            <!-- Stat 1 -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
+                <div class="text-2xl mb-2">🧑‍🤝‍🧑</div>
+                <span class="text-2xl md:text-3xl font-black text-white tracking-tight">750+</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Students Enrolled</span>
+            </div>
+            <!-- Stat 2 -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
+                <div class="text-2xl mb-2">📖</div>
+                <span class="text-2xl md:text-3xl font-black text-cyan-400 tracking-tight">15+</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Total Courses</span>
+            </div>
+            <!-- Stat 3 -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
+                <div class="text-2xl mb-2">🏆</div>
+                <span class="text-2xl md:text-3xl font-black text-white tracking-tight">8+ Years</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Of Excellence</span>
+            </div>
+            <!-- Stat 4 -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
+                <div class="text-2xl mb-2">🌐</div>
+                <span class="text-2xl md:text-3xl font-black text-emerald-400 tracking-tight">99%</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">Success Rate</span>
+            </div>
+        </section>
+
+        <!-- Core Value Feature Section -->
         <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
             <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl">
                 <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold mb-4">📚</div>
@@ -143,18 +170,6 @@
             </div>
         </section>
 
-        <!-- Founder's Authentic Note Section -->
-        <section class="max-w-4xl mx-auto bg-slate-900/20 border border-slate-900 rounded-2xl p-6 md:p-8 mb-20">
-            <span class="text-xs font-semibold tracking-wider text-cyan-400 uppercase">A Note From RaOne Sir</span>
-            <h2 class="text-xl font-bold mt-1 mb-3 text-white">Why We Built This Platform</h2>
-            <p class="text-xs md:text-sm text-slate-400 leading-relaxed mb-3">
-                Over the years, competitive exams have turned into an expensive ecosystem. Brilliant minds are often left behind simply because elite test materials and professional counseling are trapped behind astronomical price walls.
-            </p>
-            <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
-                Since 2018, our mission has been completely straightforward: break that barrier. We deliver rigorous conceptual mapping, pattern analysis, and secure counseling methodologies directly to the students at a fraction of the cost. Your hard work deserves the right direction, and we are here to provide exactly that.
-            </p>
-        </section>
-
         <!-- Career Guidance Consultancy Services Section -->
         <section id="consultancy-services" class="mb-16 scroll-mt-24">
             <div class="text-center max-w-2xl mx-auto mb-10">
@@ -165,13 +180,13 @@
                 </p>
             </div>
 
-            <!-- Infographic Section -->
+            <!-- Pointing to your clean consultation.png (.png extension optimized verbatim) -->
             <div class="bg-slate-900/30 border border-slate-900 p-6 rounded-2xl max-w-4xl mx-auto">
                 <div class="flex flex-col items-center justify-center mb-8 border-b border-slate-800/80 pb-8">
-                    <div class="border border-slate-800 p-2 rounded-xl bg-slate-950 shadow-xl max-w-md w-full">
-                        <img src="matrix.jpg" alt="NEET UG Exam Admission Framework Infographic" class="rounded-lg w-full object-contain">
+                    <div class="border border-slate-800 p-2 rounded-2xl bg-slate-950 shadow-2xl max-w-2xl w-full overflow-hidden">
+                        <img src="consultation.png" alt="Career Guidance Professional Interview" class="rounded-xl w-full object-cover max-h-96">
                     </div>
-                    <p class="text-[11px] text-slate-500 mt-2.5 italic">Figure 1.1: Official Medical Education Admission Matrices Map</p>
+                    <p class="text-[11px] text-slate-500 mt-3 italic">Figure 1.1: Official Medical Education Admission Consultation Portal Mapping</p>
                 </div>
 
                 <div>
@@ -185,12 +200,6 @@
                         <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BHMS Colleges</span></a>
                         <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BUMS Colleges</span></a>
                         <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BVSC Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BPTH Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BNYS Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BASLP Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BOTH Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">BP & O Colleges</span></a>
-                        <a href="#secure-mentorship-hub" class="bg-slate-950/60 border border-slate-850 p-3 rounded-xl flex items-center gap-2 hover:border-cyan-500/30 hover:bg-slate-950 transition"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></div> <span class="font-medium text-slate-300">B.Sc. Nursing</span></a>
                     </div>
                 </div>
             </div>
@@ -204,49 +213,37 @@
                 <p class="text-xs text-slate-400 leading-relaxed">A simple, transparent and step-by-step process designed to make your admission journey smooth and stress-free.</p>
             </div>
 
-            <!-- Process Card Step Lineup Matrix Grid Layout -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                <!-- Step 01 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">01</div>
                     <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 text-lg">💬</div>
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wide mb-2">01. Free Counselling</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">We understand your academic background, interests and career goals through a detailed counselling session.</p>
                 </div>
-
-                <!-- Step 02 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">02</div>
                     <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 text-lg">🔍</div>
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wide mb-2">02. Course Selection</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Based on your profile, we recommend the most suitable courses and affiliated colleges.</p>
                 </div>
-
-                <!-- Step 03 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">03</div>
                     <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 mb-4 text-lg">📄</div>
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wide mb-2">03. Documentation</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">We assist you with eligibility verification, application forms and complete documentation.</p>
                 </div>
-
-                <!-- Step 04 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">04</div>
                     <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-4 text-lg">🏛️</div>
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wide mb-2">04. College Confirmation</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Secure your seat in a trusted affiliated institution with complete transparency.</p>
                 </div>
-
-                <!-- Step 05 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">05</div>
                     <div class="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 mb-4 text-lg">💳</div>
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wide mb-2">05. Admission Completion</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">We guide you through fee structure, payment process and final admission confirmation.</p>
                 </div>
-
-                <!-- Step 06 -->
                 <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-500/30 transition duration-300">
                     <div class="absolute top-4 right-4 text-3xl font-black text-slate-800/40 select-none">06</div>
                     <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 text-lg">🎧</div>
@@ -288,7 +285,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
-                <!-- Plan 1 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <h4 class="text-base font-bold text-slate-200 mb-1">Core Study Vault</h4>
@@ -306,7 +302,6 @@
                     <a href="#study-contact-form" class="mt-6 inline-flex items-center justify-center w-full py-2.5 rounded-xl text-xs font-semibold bg-slate-800 border border-slate-700 text-slate-200 hover:bg-slate-750 transition">Get Vault Access</a>
                 </div>
 
-                <!-- Plan 2 -->
                 <div class="bg-slate-900 border border-cyan-500/40 p-6 rounded-2xl flex flex-col justify-between relative shadow-md shadow-cyan-950/10">
                     <span class="absolute top-0 right-4 -translate-y-1/2 bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Most Popular</span>
                     <div>
@@ -325,7 +320,6 @@
                     <a href="#study-contact-form" class="mt-6 inline-flex items-center justify-center w-full py-2.5 rounded-xl text-xs font-bold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition">Secure Your Edge</a>
                 </div>
 
-                <!-- Plan 3 -->
                 <div class="bg-slate-900/40 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between">
                     <div>
                         <h4 class="text-base font-bold text-slate-200 mb-1">Complete Premium Combo</h4>
@@ -345,7 +339,7 @@
             </div>
         </section>
 
-        <!-- HIGHLY UPGRADED MULTI-CHANNEL CONTACT MATRIX HUB -->
+        <!-- MULTI-CHANNEL CONTACT MATRIX HUB -->
         <section id="secure-mentorship-hub" class="max-w-4xl mx-auto bg-slate-900/30 border border-slate-850 rounded-2xl p-6 mb-20 relative overflow-hidden scroll-mt-24">
             <div class="text-center max-w-xl mx-auto mb-8">
                 <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Secure Direct Access</span>
@@ -355,9 +349,7 @@
                 </p>
             </div>
 
-            <!-- Modern Interactive Lineup Grid -->
             <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
-                <!-- Session App Block -->
                 <div class="bg-slate-950 border border-slate-850 p-4 rounded-xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 mb-2">
@@ -369,7 +361,6 @@
                     <button onclick="copyHandle('0576bc0eaaa9aeae11a907200d72729340e4fdca318beeced0eca31654ae799f0b', 'session-btn')" id="session-btn" class="w-full py-2 rounded-lg font-bold text-[11px] bg-slate-900 text-slate-300 border border-slate-800 hover:bg-slate-800 transition cursor-pointer">Copy Session ID</button>
                 </div>
 
-                <!-- Element Matrix Block (Restored Verbatim to raonesir) -->
                 <div class="bg-slate-950 border border-slate-850 p-4 rounded-xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 mb-2">
@@ -381,7 +372,6 @@
                     <button onclick="copyHandle('@raonesir:matrix.org', 'element-btn')" id="element-btn" class="w-full py-2 rounded-lg font-bold text-[11px] bg-slate-900 text-slate-300 border border-slate-800 hover:bg-slate-800 transition cursor-pointer">Copy Matrix Handle</button>
                 </div>
 
-                <!-- Wire Messenger Block (Restored Verbatim to raonesir) -->
                 <div class="bg-slate-950 border border-slate-850 p-4 rounded-xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 mb-2">
@@ -393,7 +383,6 @@
                     <button onclick="copyHandle('@raonesir', 'wire-btn')" id="wire-btn" class="w-full py-2 rounded-lg font-bold text-[11px] bg-slate-900 text-slate-300 border border-slate-800 hover:bg-slate-800 transition cursor-pointer">Copy Wire Username</button>
                 </div>
 
-                <!-- Strategic Contact Form Redirection -->
                 <div class="bg-slate-950 border border-slate-850 p-4 rounded-xl flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-2 mb-2">
@@ -410,22 +399,18 @@
             <div class="border-t border-slate-900/80 pt-6">
                 <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 text-center">📢 Official Community Broadcast Channels</h4>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto text-xs">
-                    <!-- Telegram Link -->
                     <a href="https://t.me/+fduMfamcYpsxYTU9" target="_blank" class="bg-slate-950 border border-slate-850 p-3 rounded-xl flex flex-col items-center justify-center text-center gap-1.5 hover:border-cyan-500/30 transition">
                         <span class="text-xl">✈️</span>
                         <span class="font-semibold text-slate-200">Telegram Hub</span>
                     </a>
-                    <!-- WhatsApp Channel Link -->
                     <a href="https://whatsapp.com/channel/0029VbCTW9K5vKAConbOeH3E" target="_blank" class="bg-slate-950 border border-slate-850 p-3 rounded-xl flex flex-col items-center justify-center text-center gap-1.5 hover:border-emerald-500/30 transition">
                         <span class="text-xl">🟢</span>
                         <span class="font-semibold text-slate-200">WhatsApp Feed</span>
                     </a>
-                    <!-- Instagram Link -->
                     <a href="https://www.instagram.com/careerconsultancys?igsh=MWxleDFpMnd0NTFhag==" target="_blank" class="bg-slate-950 border border-slate-850 p-3 rounded-xl flex flex-col items-center justify-center text-center gap-1.5 hover:border-rose-500/30 transition">
                         <span class="text-xl">📸</span>
                         <span class="font-semibold text-slate-200">Instagram</span>
                     </a>
-                    <!-- Facebook Link -->
                     <a href="https://www.facebook.com/share/1HQRGtrxt3/" target="_blank" class="bg-slate-950 border border-slate-850 p-3 rounded-xl flex flex-col items-center justify-center text-center gap-1.5 hover:border-blue-500/30 transition">
                         <span class="text-xl">🔵</span>
                         <span class="font-semibold text-slate-200">Facebook Page</span>
@@ -467,41 +452,8 @@
                     <span class="text-2xl shrink-0">🎖️</span>
                     <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">NDA</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Defence</p></div>
                 </a>
-                <a href="https://drive.google.com/drive/folders/1s3ZvJvA-04vyPue1Y1SwGgvjPgp8pWZh" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">⚡</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CUET</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Central Uni</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1lT3SESQ5kA6_Ed2hmlamxB96ZK_XxK96" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">⚙️</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">GATE</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Technical</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1daciTu3cmBAC47Yu7pBo2o19_c9hNyG4" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">📈</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Management</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1w2yo5gHuFyZ4vIDDlTzx26BAASL-IIkz" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">⚖️</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">CLAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Law Entry</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1e6_MipT96_020JazLkFSABpSJkiHATyP" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">💼</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">SSC</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">General Govt</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1C_Qwd-84W8Dmu_GuigbAJ-DjQh8zOjMg" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">🚂</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">Railways</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Railways Portal</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1VeU78-r1qaUqCUN2RPVIyPxocm0bRFaZ" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">🪐</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">SAT</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">Global Tier</p></div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1Pa8No4wnmCtz25hKyz_exInF4zCX8CZw" target="_blank" class="bg-slate-950/60 p-3 rounded-xl border border-slate-850 flex items-center gap-3 hover:border-cyan-500/40 transition">
-                    <span class="text-2xl shrink-0">🧬</span>
-                    <div class="min-w-0 flex-1"><h5 class="text-xs font-bold text-slate-200 truncate">MHT-CET</h5><p class="text-[9px] text-slate-500 uppercase tracking-wider font-mono mt-0.5 truncate">State Entry</p></div>
-                </a>
             </div>
 
-            <!-- Suggestion box -->
             <div class="mb-6 p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/10 text-center text-xs text-slate-400 leading-relaxed">
                 📢 <strong>Any Other Exam suggestions?</strong> Then let us know! Fill out our secure form below or message us on Session/Telegram, and we will try our best to bring the best tutors and counselors of that exam to our team.
             </div>
@@ -811,7 +763,6 @@
 
     <!-- Script Operations for Drawer Navigation Menu & Clipboard Actions -->
     <script>
-      // Toggle Drawer Function
       function toggleMobileMenu() {
         const drawer = document.getElementById('mobile-menu-drawer');
         const backdrop = document.getElementById('drawer-backdrop');
